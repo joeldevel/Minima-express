@@ -16,8 +16,8 @@ app.get('/cities', function(request, response) {
     });
 });
 
-app.get('/wheather', function(request, response) {
-    fs.readFile('./wheather.html', 'utf8', (err, data) => {
+app.get('/weather', function(request, response) {
+    fs.readFile('./weather.html', 'utf8', (err, data) => {
         if(err) throw err;
         return response.send(data);
     });
