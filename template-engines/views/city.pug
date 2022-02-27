@@ -1,0 +1,11 @@
+html
+	head
+		title city details
+	body
+		if error
+			h2 city does not exists
+			a(href="/cities.html") go back
+		else
+			h1 name #{name}
+			h2 population #{population}
+			a(href="/cities.html") go back
